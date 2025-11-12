@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTT Webトランシーバー</title>
+<style>
+body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+#talk-btn { font-size: 24px; padding: 20px; }
+</style>
+</head>
+<body>
+<h1>PTT Webトランシーバー</h1>
+
+<label>自分のID: <span id="my-id"></span></label><br><br>
+<label>相手のID: <input type="text" id="peer-id" placeholder="xxx-xx-xxxx" /></label><br><br>
+
+<button id="talk-btn">PTT</button>
+<audio id="remoteAudio" autoplay></audio>
+
+<script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
